@@ -1,15 +1,22 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState,useRef,useEffect }  from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 
+
+
+
 export default function Navbar() {
+  const container=useRef();
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
+   
+
+
     <header className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900 dark:text-white">
       <nav className="flex items-center justify-between max-w-6xl mx-auto px-4 py-4">
         <Link href="/" className="text-2xl font-bold">
@@ -22,6 +29,7 @@ export default function Navbar() {
           <li><Link href="/about">About</Link></li>
           <li><Link href="/projects">Projects</Link></li>
           <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/skills">Skills</Link></li>
         </ul>
 
         {/* Mobile Toggle Button */}
@@ -38,6 +46,7 @@ export default function Navbar() {
             <li><Link href="/about" onClick={toggleMenu}>About</Link></li>
             <li><Link href="/projects" onClick={toggleMenu}>Projects</Link></li>
             <li><Link href="/contact" onClick={toggleMenu}>Contact</Link></li>
+            <li><Link href="/skills" onClick={toggleMenu}>skills</Link></li>
           </ul>
         </div>
       )}
