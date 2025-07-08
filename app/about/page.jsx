@@ -1,3 +1,4 @@
+'use client';
 import SplitText from "./SplitText";
 import Particles from "./Particles";
 export default function   Home() {

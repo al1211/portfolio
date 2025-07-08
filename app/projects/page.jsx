@@ -1,3 +1,5 @@
+'use client';
+
 import projects from "../../data/project"
 import ProjectCard from '../../components/ProjectCard'
 
