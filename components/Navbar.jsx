@@ -17,7 +17,7 @@ export default function Navbar() {
    
 
 
-    <header className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900 dark:text-white">
+    <header className="sticky top-0 z-50  bg-gray-900 text-white border-b">
       <nav className="flex items-center justify-between max-w-6xl mx-auto px-4 py-4">
         <Link href="/" className="text-2xl font-bold">
           Anil.dev
@@ -40,7 +40,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t px-6 pb-4">
+        <div className="md:hidden bg-gray-900 border-t px-6 pb-4 text-white">
           <ul className="flex flex-col space-y-4 font-medium">
             <li><Link href="/" onClick={toggleMenu}>Home</Link></li>
             <li><Link href="/about" onClick={toggleMenu}>About</Link></li>

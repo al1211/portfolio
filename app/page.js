@@ -13,8 +13,8 @@ export default function page() {
        
         <About/>
         <Projects/>
-        <Contact/>
         <Skills/>
+        <Contact/>
       </main>
     
     </div>
